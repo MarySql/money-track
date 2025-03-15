@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.marysql.moneytrack.MainController" spacing="10" alignment="CENTER" style="-fx-padding: 15;">
+
+    <!-- Título da aplicação -->
+    <Label text="Controle de Gastos Mensais"/>
+
+    <!-- TableView com colunas -->
+    <TableView fx:id="tableGastos" VBox.vgrow="ALWAYS" maxWidth="Infinity"  >
+        <columns>
+            <TableColumn fx:id="colDescricao" text="Descrição" prefWidth="200"/>
+            <TableColumn fx:id="colValor" text="Valor" prefWidth="100"/>
+            <TableColumn fx:id="colData" text="Data" prefWidth="150"/>
+        </columns>
+    </TableView>
+
+    <!-- Botões -->
+    <VBox spacing="5">
+        <Button text="Adicionar Gasto" fx:id="btnAdicionar" style="-fx-background-color: #95B8D1; -fx-text-fill: #333333; -fx-font-size: 14px;"/>
+        <Button text="Remover Gasto" fx:id="btnRemover" style="-fx-background-color: #EDAFB8; -fx-text-fill: #333333; -fx-font-size: 14px;"/>
+        <Button text="Editar Gasto" fx:id="btnEditar" style="-fx-background-color: #666A86; -fx-text-fill: #333333; -fx-font-size: 14px;"/>
+    </VBox>
+
+</VBox>

@@ -1,0 +1,78 @@
+/* Definir a cor de fundo da aplicação */
+.root {
+    -fx-background-color: #333333;
+}
+
+/* Estilizar o título */
+.label {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #D8D8D8;
+    -fx-padding: 10px;
+}
+
+/* Estilizar a tabela */
+.table-view {
+    -fx-background-color: #EDAFB8;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+    -fx-font-size: 14px;
+    -fx-selection-bar: #EDAFB8; /* Cor da seleção */
+    -fx-min-height: 250px; /* Altura mínima */
+    -fx-max-height: 400px; /* Altura máxima */
+}
+
+/* Estilizar os cabeçalhos das colunas */
+.table-view .column-header {
+    -fx-background-color: #EDAFB8;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Estilizar as células da tabela */
+.table-view .cell {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+/* Definir largura mínima para as colunas */
+#colDescricao {
+    -fx-pref-width: 250px;
+}
+
+#colValor {
+    -fx-pref-width: 150px;
+}
+
+#colData {
+    -fx-pref-width: 155px;
+}
+
+/* Estilizar os botões */
+.button {
+    -fx-background-color: #95B8D1;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 3, 0, 2, 2);
+    -fx-min-width: 150px; /* Para garantir que os botões tenham um tamanho fixo */
+}
+
+/* Efeito hover para os botões */
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+/* Estilo para os botões de ação */
+.button:focus {
+    -fx-background-color: #388e3c;
+}
+
+/* Espaçamento entre os componentes */
+.vbox {
+    -fx-spacing: 15px;
+    -fx-padding: 20px;
+    -fx-alignment: center;
+}
