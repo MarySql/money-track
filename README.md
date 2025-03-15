@@ -9,7 +9,7 @@
 
 ## Tecnologias Utilizadas
 
-- **JavaFX
+- **JavaFX**
 - **Persistência de Dados**: JSON
 - **Estilos**: CSS (JavaFX)
 
